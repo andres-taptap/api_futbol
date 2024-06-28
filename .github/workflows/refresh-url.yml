@@ -1,0 +1,13 @@
+name: Refresh URL
+
+on:
+  schedule:
+    - cron: "*/1 * * * *" # Ejecutar cada minuto
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Refresh URL
+        run: curl https://latam.taptapnetworks.com/taptap/api_futbol/?cd=test
+
