@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Refresh URL
-        run: curl https://latam.taptapnetworks.com/taptap/api_futbol/?cd=test
+        run: curl -v https://latam.taptapnetworks.com/taptap/api_futbol/?cd=test
 
